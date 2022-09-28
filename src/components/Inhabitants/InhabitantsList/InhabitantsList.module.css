@@ -1,0 +1,39 @@
+.inhabitantsList {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .inhabitantsList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .inhabitantsList {
+    grid-template-columns: 1fr;
+  }
+}
+
+.inhabitantListItem {
+  padding: 1rem;
+  border: 1px solid #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inhabitantImage {
+  max-width: 20rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.inhabitantDetails {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
